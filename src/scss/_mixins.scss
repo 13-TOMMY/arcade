@@ -1,0 +1,22 @@
+// Media Query Mixins
+@mixin mobile {
+  @media (max-width: $breakpoint-m) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $breakpoint-l) {
+    @content;
+  }
+}
+
+//transitions
+
+@mixin animation($keyframes, $repeat) {
+  animation: $keyframes $animation-duration $transition-easing $repeat;
+}
+
+@mixin headerAnimation($keyframes, $animation-duration, $transition-easing, $delay, $repeat, $direction) {
+  animation: $keyframes $animation-duration $transition-easing $delay $repeat $direction;
+}

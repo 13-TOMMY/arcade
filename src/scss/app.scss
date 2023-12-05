@@ -1,0 +1,14 @@
+@import "./mixins";
+@import "./reset";
+@import "./variables";
+@import "./global";
+@import "./modes";
+@import "./typography";
+@import "./transitions";
+// Import component-specific Sass files
+
+
+// Import page-specific Sass files
+@import "./pages/homepage.scss";
+
+/*App.jsx*/

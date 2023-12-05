@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+    font-family: $font-family;
+    background-color: $baseLight;
+  }
+
+button,
+a,
+link {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
