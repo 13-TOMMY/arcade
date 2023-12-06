@@ -1,64 +1,65 @@
-// /* Color variables general*/
-// $color-black: #000000;
-// $color-white: #ffffff;
-// /* Color variables light*/
-// $baseLight: #e5e4e2; //platinum
-// $secondLight: #588157; //fernGreen
-// $mainLight: #ff7f50; //coral
-// /* Color variables dark*/
-// $baseDark: #262B2C; //gunmetal
-// $secondDark: #0FA3B1; //moonstone
-// $mainDark: #ffbf00; //amber
+/* Color variables general*/
+$color-black: #000000;
+$color-white: #ffffff;
+/* Color variables light*/
+$baseLight: #e5e4e2; //platinum
+$secondLight: #588157; //fernGreen
+$mainLight: #ff7f50; //coral
+/* Color variables dark*/
+$baseDark: #262b2c; //gunmetal
+$secondDark: #0fa3b1; //moonstone
+$mainDark: #ffbf00; //amber
 
-// /* font variables */
-// $font-family: "M PLUS 1 Code", sans-serif;
-// $s-font: 18px;
-// $m-font: 26px;
-// $l-font: 34px;
+/* font variables */
+$font-family: "Roboto", sans-serif;
+$special-font-family: "Pixelify Sans", sans-serif;
+$s-font: 18px;
+$m-font: 26px;
+$l-font: 34px;
 
-// /* border variables */
-// $border-width: 2px;
-// $out-border-radius: 18px;
-// $in-border-radius: 12px;
+/* border variables */
+$border-width: 2px;
+$out-border-radius: 18px;
+$in-border-radius: 12px;
 
-// //padding
-// //side
-// $padding-s-side: 0 20px;
-// $padding-m-side: 0 50px;
-// $padding-l-side: 0 10%;
-// //top bottom
-// $padding-s-top-bottom: 20px 0;
-// $padding-m-top-bottom: 50px 0;
-// $padding-l-top-bottom: 10% 0;
-// //both
-// $padding-both-s: 20px;
-// $padding-both-m: 50px;
-// $padding-both-l: 10%;
+//padding
+//side
+$padding-s-side: 0 20px;
+$padding-m-side: 0 50px;
+$padding-l-side: 0 10%;
+//top bottom
+$padding-s-top-bottom: 20px 0;
+$padding-m-top-bottom: 50px 0;
+$padding-l-top-bottom: 10% 0;
+//both
+$padding-both-s: 20px;
+$padding-both-m: 50px;
+$padding-both-l: 10%;
 
-// //Margin
-// //side
-// $margin-s-side: 0 20px;
-// $margin-m-side: 0 50px;
-// $margin-l-side: 0 10%;
-// //top bottom
-// $margin-s-top-bottom: 20px 0;
-// $margin-m-top-bottom: 50px 0;
-// $margin-l-top-bottom: 10% 0;
-// //both
-// $margin-both-s: 20px;
-// $margin-both-m: 50px;
-// $margin-both-l: 10%;
-// //gap
-// $gap-s: 10px;
-// $gap-m: 15px;
-// $gap-l: 20px;
-// $gap-xl: 50px;
+//Margin
+//side
+$margin-s-side: 0 20px;
+$margin-m-side: 0 50px;
+$margin-l-side: 0 10%;
+//top bottom
+$margin-s-top-bottom: 20px 0;
+$margin-m-top-bottom: 50px 0;
+$margin-l-top-bottom: 10% 0;
+//both
+$margin-both-s: 20px;
+$margin-both-m: 50px;
+$margin-both-l: 10%;
+//gap
+$gap-s: 10px;
+$gap-m: 15px;
+$gap-l: 20px;
+$gap-xl: 50px;
 
-// // Breakpoints
-// $breakpoint-s: 320px;
-// $breakpoint-m: 768px;
-// $breakpoint-l: 1024px;
+// Breakpoints
+$breakpoint-s: 320px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1024px;
 
-// //transitions
-// $animation-duration: 0.4s;
-// $transition-easing: linear;
+//transitions
+$animation-duration: 0.4s;
+$transition-easing: linear;
