@@ -6,9 +6,11 @@
 @import "./typography";
 @import "./transitions";
 // Import component-specific Sass files
-
+@import "./components/footer.scss";
+@import "./components/header.scss";
 
 // Import page-specific Sass files
 @import "./pages/homepage.scss";
+@import "./pages/about.scss";
 
 /*App.jsx*/
