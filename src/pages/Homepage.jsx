@@ -1,8 +1,11 @@
 import React from 'react'
+import BannerCard from '../components/BannerCard'
 
 function Homepage() {
   return (
-    <div>Homepage</div>
+    <div>
+      <BannerCard />
+    </div>
   )
 }
 
