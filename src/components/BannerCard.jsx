@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 function BannerCard() {
 
     return (
-        <div className='banner-card-container light-mode-card-background'>
+        <div className='banner-card-container '>
             <h1>GAME OF THE DAY</h1>
-            <div className='banner-content'>
+            <div className='banner-content light-mode-card-background'>
                 <img src="https://img.freepik.com/free-vector/pixel-art-vacation-background_52683-86708.jpg?w=1800&t=st=1701958646~exp=1701959246~hmac=f716b3433cca7288f0218f92a78153521fa97b4d80ab74458ca407ec63edc97c" alt="" />
                 <div className='banner-description'>
                     <h2>
