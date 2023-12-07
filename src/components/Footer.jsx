@@ -26,8 +26,7 @@ function Footer() {
     }
   };
   return (
-    <div>
-      <div>
+      <div className="footer-container">
         <div className="contact-container light-mode-card-background">
           <div className="contact-left">
             <h3 className="l-font">Lets keep in touch</h3>
@@ -79,7 +78,6 @@ function Footer() {
               <p className="s-font">Instagram</p>
             </Link>
           </div>
-        </div>
       </div>
       <div className="footer">
         <div className="footer-left">
@@ -95,7 +93,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
   );
 }
 

@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <div className="application-container">
       <div className="bg-color-primary"></div>
       <div className="bg-color-secondary"></div>
       <BrowserRouter>
@@ -19,7 +19,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
