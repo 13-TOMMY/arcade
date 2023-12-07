@@ -1,57 +1,68 @@
-header {
+// Header component styles
+.header-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     font-size: $m-font;
     max-width: 1440px;
     margin: 20px auto;
     padding: $padding-l-side;
-}
 
-a {
-    font-weight: bolder;
-}
+    a {
+        font-weight: bolder;
+    }
 
-button {
-    border-radius: $in-border-radius;
-    border: $border-width solid $color-white;
-    width: 110px;
-    height: 40px;
-    font-size: $m-font;
-    color: $baseLight;
-}
+    .search-container {
+        position: relative;
+        width: 40%;
 
-input {
-    width: 100%;
-    height: 40px;
-    border: none;
-    border-radius: $in-border-radius;
-    font-size: $s-font;
-    background-color: $baseLight;
-    text-indent: 50px;
-}
+        input {
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: $in-border-radius;
+            font-size: $s-font;
+            background-color: $baseLight;
+            text-indent: 50px;
+        }
 
-.search-container {
-    position: relative;
-    width: 40%;
-}
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
 
-.search-icon {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-}
+    .buttons-container {
+        display: flex;
+        gap: $gap-l;
 
-.buttons-container {
-    display: flex;
-    gap: $gap-l;
-}
+        button {
+            border-radius: $in-border-radius;
+            border: $border-width solid $color-white;
+            width: 110px;
+            height: 40px;
+            font-size: $m-font;
+            color: $baseLight;
+            transition: all 0.2s;
 
-.btn-primary {
-    background-color: $mainLight;
-}
+            &.btn-primary {
+                background-color: $mainLight;
 
-.btn-secondary {
-    background-color: $secondLight;
+                &:hover {
+                    background-color: darken($mainLight, 10%); // Change the background color on hover
+                }
+            }
+
+            &.btn-secondary {
+                background-color: $secondLight;
+
+                &:hover {
+                    background-color: darken($secondLight, 10%); // Change the background color on hover
+                }
+            }
+        }
+    }
 }
