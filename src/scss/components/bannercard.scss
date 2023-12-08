@@ -1,39 +1,33 @@
-.banner-card-container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 80px auto;
+h1 {
+  font-size: 30px;
+  font-size: calc(100% + 5vw);
+  font-weight: bolder;
+  text-align: center;
+}
 
-  h1 {
-    font-size: 30px;
-    font-size: calc(100% + 5vw);
-    font-weight: bolder;
-    text-align: center;
+.banner-content {
+  padding: $padding-both-m;
+  border-radius: $out-border-radius;
+  margin: $margin-m-top-bottom;
+
+  display: flex;
+  gap: $gap-l;
+
+  img {
+    width: 50%;
+    border-radius: $out-border-radius;
   }
 
-  .banner-content {
-    padding: $padding-both-m;
-    border-radius: $out-border-radius;
-    margin: $margin-m-top-bottom;
-
+  .banner-description {
     display: flex;
-    gap: $gap-l;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: $special-font-family;
+    font-size: 1.5rem;
 
-    img {
-      width: 50%;
-      border-radius: $out-border-radius;
-    }
-
-    .banner-description {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      font-family: $special-font-family;
-      font-size: 1.5rem;
-
-      h2 {
-        font-size: 2rem;
-        font-weight: bold;
-      }
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
     }
   }
 }

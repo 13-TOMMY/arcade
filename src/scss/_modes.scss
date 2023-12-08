@@ -4,3 +4,9 @@
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
 }
+
+.card-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 80px auto;
+}
