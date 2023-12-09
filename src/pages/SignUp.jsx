@@ -40,34 +40,34 @@ function SignUp() {
   };
 
   return (
-    <div className="signup-container">
-      <div className="signup-left">
-        <div className="left-container-su">
-          <h2>Create Your RE:serve Account</h2>
-          <form onSubmit={handleSignup} className="signup-form">
-            <div className="su-form-group">
-              <p>Name:</p>
+    <div className="auth-container">
+      <div className="auth-left">
+        <div className="left-container-auth light-mode-card-background">
+          <h2 className="l-font">Create Your Account</h2>
+          <form onSubmit={handleSignup} className="auth-form">
+            <div className="auth-form-group">
+              <p className="m-font">Name:</p>
               <input
                 type="text"
-                className="su-form"
+                className="auth-form m-font"
                 placeholder="Enter your name"
                 required
                 onChange={(e) => setName(e.target.value)}
                 value={name}
               />
-              <p>Email:</p>
+              <p className="m-font">Email:</p>
               <input
                 type="email"
-                className="su-form"
+                className="auth-form m-font"
                 placeholder="Enter your eamil"
                 required
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
               />
-              <p>Password:</p>
+              <p className="m-font">Password:</p>
               <input
                 type="password"
-                className="su-form"
+                className="auth-form m-font"
                 placeholder="Enter your password"
                 required
                 onChange={(e) => setPassword(e.target.value)}
@@ -75,7 +75,7 @@ function SignUp() {
               />
             </div>
             <motion.button
-              className="su-form-btn"
+              className="auth-form-btn m-font"
               type="submit"
               variants={buttonVariants}
               initial="initial"
@@ -85,16 +85,20 @@ function SignUp() {
               Sign up
             </motion.button>
           </form>
-          <p className="su-last-p">
+          <p className="auth-last-p s-font">
             Already have an account?
-            <span className="su-form-link" onClick={() => navigate("/login")}>
+            <span
+              className="auth-form-link s-font"
+              onClick={() => navigate("/login")}
+            >
               Log in here !
             </span>
           </p>
         </div>
       </div>
-      <div className="signup-right">
-      <Lottie
+      <div className="auth-right">
+        <div className="right-container light-mode-card-background">
+          <Lottie
             animationData={slim}
             loop={true}
             lottieRef={lottieRef}
@@ -103,6 +107,7 @@ function SignUp() {
               lottieRef.current.setSpeed(0.5);
             }}
           />
+        </div>
       </div>
     </div>
   );

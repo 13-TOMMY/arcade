@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import slim from "../assets/slime-jump-mini-games.json";
 
-
 function LogIn() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -38,25 +37,25 @@ function LogIn() {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-left">
-        <div className="left-container-li">
-          <h2>Welcome Back - Log In</h2>
-          <form onSubmit={handleLogin} className="login-form">
-            <div className="li-form-group">
-              <p>Email:</p>
+    <div className="auth-container">
+      <div className="auth-left ">
+        <div className="left-container-auth light-mode-card-background">
+          <h2 className="l-font">Welcome Back - Log In</h2>
+          <form onSubmit={handleLogin} className="auth-form">
+            <div className="auth-form-group">
+              <p className="m-font">Email:</p>
               <input
                 type="email"
-                className="li-form"
+                className="auth-form m-font"
                 placeholder="Enter your email"
                 required
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
               />
-              <p>Password:</p>
+              <p className="m-font">Password:</p>
               <input
                 type="password"
-                className="li-form"
+                className="auth-form m-font"
                 placeholder="Enter your password"
                 required
                 onChange={(e) => setPassword(e.target.value)}
@@ -64,7 +63,7 @@ function LogIn() {
               />
             </div>
             <motion.button
-              className="li-form-btn"
+              className="auth-form-btn m-font"
               type="submit"
               variants={buttonVariants}
               initial="initial"
@@ -74,15 +73,19 @@ function LogIn() {
               Login
             </motion.button>
           </form>
-          <p className="li-last-p">
+          <p className="auth-last-p s-font">
             Don't have an account?
-            <span className="li-form-link" onClick={() => navigate("/signup")}>
+            <span
+              className="auth-form-link s-font"
+              onClick={() => navigate("/signup")}
+            >
               Sign up here !
             </span>
           </p>
         </div>
       </div>
-      <div className="login-right">
+      <div className="auth-right">
+      <div className="right-container light-mode-card-background">
         <Lottie
           animationData={slim}
           loop={true}
@@ -91,7 +94,8 @@ function LogIn() {
             // lottieRef.current.goToAndPlay(100, false);
             lottieRef.current.setSpeed(0.5);
           }}
-        />
+          />
+          </div>
       </div>
     </div>
   );
