@@ -1,9 +1,13 @@
 .auth-container {
-  padding: 150px 50px 150px 50px;
+  padding: 150px 0;
   height: 100vh;
+  width: 95%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  @include tablet {
+    justify-content: center;
+  }
   /* Left */
   .auth-left {
     width: 45%;
@@ -20,18 +24,15 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      max-width: 700px;
       width: 100%;
-      max-height: 600px;
+      max-height: 700px;
       height: 100%;
       border-radius: 20px;
-
       @include tablet {
-        width: 95%;
+        width: 100%;
       }
       h2 {
         color: var(--color-text);
-        font-family: Montserrat;
         font-weight: 500;
         @include mobile {
           width: 70%;
@@ -39,94 +40,91 @@
         }
       }
     }
-
-    /* Form styles */
-    .auth-form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      height: 60%;
-      width: 80%;
-
-      .auth-form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-
-        p {
-          font-family: Montserrat;
-
-          font-weight: 500;
-          color: var(--color-text);
-        }
-
-        .auth-form {
-          width: 100%;
-          height: 48px;
-          flex-shrink: 0;
-          border-radius: 12px;
-          border: none;
-          font-family: Montserrat;
-
-          font-weight: 500;
-          padding-left: 10px;
-        }
-      }
-
-      .auth-form-btn {
-        width: 150px;
-        height: 48px;
-        color: var(--color-text);
-        background-color: var(--color-button);
-        font-family: Montserrat;
-        font-weight: 500;
-        border-radius: 12px;
-        cursor: pointer;
-        border: none;
-        transition: 1s;
-
-        &:hover {
-          background-color: var(--color-boxes-cards);
-          border: 1px solid var(--color-button-secondary);
-        }
-      }
-
-      .auth-last-p {
-        color: var(--color-text);
-        font-family: Montserrat;
-        font-weight: 500;
-        text-align: center;
-        width: 80%;
-
-        span {
-          cursor: pointer;
-        }
-      }
-    }
   }
 
-  /* Right */
-  .auth-right {
-    width: 45%;
-    height: 100%;
+  /* Form styles */
+  .auth-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    .right-container {
-      max-width: 700px;
-      width: 100%;
-      max-height: 600px;
-      height: 100%;
+    justify-content: space-between;
+    height: 60%;
+    width: 80%;
+
+    .auth-form-group {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-radius: 20px;
-      @include tablet {
-        display: none;
+      gap: 15px;
+      width: 100%;
+
+      p {
+        font-weight: 500;
+        color: var(--color-text);
+      }
+
+      .auth-form {
+        width: 100%;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        border: none;
+        font-weight: 500;
+        padding-left: 10px;
       }
     }
+
+    .auth-form-btn {
+      width: 150px;
+      height: 48px;
+      color: $baseLight;
+      background-color: $secondLight;
+      font-weight: 500;
+      border-radius: 12px;
+      cursor: pointer;
+      border: none;
+      transition: 1s;
+    }
+
+    .auth-last-p {
+      color: var(--color-text);
+      font-weight: 500;
+      text-align: center;
+      width: 80%;
+
+    }
+  }
+  .auth-form-link {
+    padding-left: 10px;
+    cursor: pointer;
+  }
+}
+
+/* Right */
+.auth-right {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .right-container {
+    width: 100%;
+    max-height: 700px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 0 1%;
+    :first-child {
+      height: 100%;
+      width: 100%;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  @include tablet {
+    display: none;
   }
 }
