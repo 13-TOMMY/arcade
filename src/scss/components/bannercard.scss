@@ -9,12 +9,14 @@ h1 {
   padding: $padding-both-m;
   border-radius: $out-border-radius;
   margin: $margin-m-top-bottom;
+  height: 350px;
 
   display: flex;
   gap: $gap-l;
 
   img {
     width: 50%;
+    max-height: 100%;
     border-radius: $out-border-radius;
   }
 

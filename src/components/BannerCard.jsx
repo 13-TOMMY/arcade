@@ -6,16 +6,21 @@ function BannerCard() {
         <div className='card-container'>
             <h1>GAME OF THE DAY</h1>
             <div className='banner-content light-mode-card-background'>
-                <img src="https://img.freepik.com/free-vector/pixel-art-vacation-background_52683-86708.jpg?w=1800&t=st=1701958646~exp=1701959246~hmac=f716b3433cca7288f0218f92a78153521fa97b4d80ab74458ca407ec63edc97c" alt="" />
+                <img src="https://img.freepik.com/premium-vector/pixel-art-male-character-holding-shotgun-isolated-white-background_658931-165.jpg?w=740" alt="" />
                 <div className='banner-description'>
                     <h2>
-                        PIXEL ADVENTURE
+                        TARGET TIME TRIAL
                     </h2>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam minus officiis nulla veritatis aliquid vero quod labore quae aliquam libero consequuntur ducimus nobis assumenda atque, necessitatibus tempore ex error eius.
-                        Nobis doloribus similique sunt blanditiis quibusdam facere maxime dolorem quas qui quia, deserunt corrupti esse cum harum ratione aliquid itaque minima ut voluptatum temporibus accusantium libero inventore facilis! Hic, nulla.
+                        How many targets can you hit in fifteen seconds? There&apos;s only one way to find out... by playing the best target shooting game the world has ever seen.
+                        <br />
+                        <br />
+                        *that statement may be untrue
+                        <br />
+                        <br />
+                        **game may speed up on it&apos;s own for no reason due to bugs...
                     </p>
-                    <Link to='#'>Link to game &rarr;</Link>
+                    <Link to={'/game/SHOOTINGGAME'}>Link to game &rarr;</Link>
                 </div>
             </div>
         </div>

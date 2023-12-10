@@ -1,0 +1,30 @@
+.target-game-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: $gap-m;
+
+    user-select: none;
+
+    p {
+        text-align: center;
+        font-family: $special-font-family;
+        font-size: 2rem;
+    }
+
+    button {
+        border-radius: $in-border-radius;
+        border: $border-width solid $color-black;
+        width: auto;
+        height: 40px;
+        font-size: $m-font;
+        font-family: $special-font-family;
+        color: $color-black;
+    }
+
+}
