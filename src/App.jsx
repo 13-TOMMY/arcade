@@ -15,7 +15,7 @@ function App() {
         className="background-app-svg"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
         xmlns:svgjs="http://svgjs.dev/svgjs"
         viewBox="0 0 800 800"
         preserveAspectRatio="xMidYMid slice"
@@ -27,7 +27,7 @@ function App() {
             height="20"
             patternUnits="userSpaceOnUse"
             patternTransform="translate(0 0) scale(14.1) rotate(0)"
-            shape-rendering="crispEdges"
+            shapeRendering="crispEdges"
           >
             <rect
               width="1"
